@@ -6,13 +6,13 @@ It operates purely at Layer 2 with no VLAN configuration needed.
 
 ## Why Does This Switch Exist?
 ```
-In the NHS diagram, the Outside Switch:
+In this enterprise diagram, the Outside Switch:
 - Provides a physical aggregation point
 - Allows multiple devices to connect
   to the same network segment
 - In production: connects pfSense cluster
   members to the same segment
-- Mirrors real NHS C9300 Outside Switch role
+- Mirrors real C9300 Outside Switch role
 ```
 
 ## Configuration
