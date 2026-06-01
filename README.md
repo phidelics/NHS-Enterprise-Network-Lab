@@ -99,5 +99,5 @@ Inspired by enterprise healthcare network designs used in large organisations.
 - Debian Linux
 
 ## Author
-Built as part of CCNA studies and enterprise networking practice.
+Built as part of enterprise networking practice.
 Demonstrates hands-on skills in network design, security, and troubleshooting.
