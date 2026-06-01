@@ -1,8 +1,10 @@
-# NHS Enterprise Network Lab
+# Enterprise Network Lab - pfSense & Cisco
 
 ## Overview
-This lab replicates a real NHS enterprise network infrastructure built in EVE-NG.
+This lab replicates a real-world enterprise network infrastructure built in EVE-NG.
 It demonstrates enterprise-grade network design including firewall zones, inter-VLAN routing, NAT, and DMZ architecture.
+
+Inspired by enterprise healthcare network designs used in large organisations.
 
 ## Network Diagram
 ```
@@ -62,6 +64,7 @@ It demonstrates enterprise-grade network design including firewall zones, inter-
 - DMZ architecture
 - Layer 2/3 switching hierarchy
 - Enterprise traffic flow design
+- Firewall rule ordering and stateful inspection
 
 ## Traffic Flow Rules
 | Source | Destination | Action | Reason |
@@ -73,20 +76,28 @@ It demonstrates enterprise-grade network design including firewall zones, inter-
 | DMZ | Internet | BLOCK | Servers dont browse internet |
 | Internet | DMZ | Allow port 8080 | NAT to web server |
 
+## Enterprise Design Principles Applied
+```
+1. Default Deny - block everything, allow only what is needed
+2. Zone Separation - WAN, DMZ, LAN completely isolated
+3. Firewall as gateway - all inter-zone traffic inspected
+4. DMZ for public services - servers never on internal LAN
+5. NAT - hide internal infrastructure from users
+6. Layered switching - Access, Core, Outside hierarchy
+```
+
 ## Sections
 1. [IP Planning](docs/IP-Plan.md)
 2. [Switch Configurations](configs/)
 3. [Firewall Rules](docs/Firewall-Rules.md)
 4. [NAT Configuration](docs/NAT.md)
 
-## Why This Design?
-This lab replicates the NHS CoIN (Community of Interest Network) architecture which uses:
-- Dual-site design 
-- Firewall clusters for HA
-- Cisco C9300/C9600 switching hierarchy
-- Separated DMZ for server hosting
-- 
+## Tools Used
+- EVE-NG Community Edition
+- pfSense 2.6.0
+- Cisco IOU L2/L3 images
+- Debian Linux
 
 ## Author
-Built as part of enterprise networking practice.
-EVE-NG lab environment with pfSense, Cisco IOU images.
+Built as part of CCNA studies and enterprise networking practice.
+Demonstrates hands-on skills in network design, security, and troubleshooting.
