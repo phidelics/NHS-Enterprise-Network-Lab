@@ -77,8 +77,8 @@ All traffic inspected by firewall
 
 ## Real World Application
 ```
-NHS public website example:
-User types: https://www.nhs.uk
+Enterprise public website example:
+User types: https://www.homeoffice.uk
 DNS resolves to public IP
 Firewall NAT translates to internal server
 User never knows internal infrastructure!
