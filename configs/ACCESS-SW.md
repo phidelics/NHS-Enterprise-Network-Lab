@@ -12,7 +12,7 @@ In enterprise networks, access switches:
 - Provide port security
 - Are separate from core for scalability
 
-NHS has one access switch per floor/department
+Enterprise has one access switch per floor/department
 Each with dual uplinks to both Core switches for HA
 ```
 
