@@ -81,12 +81,12 @@ It demonstrates enterprise-grade network design including firewall zones, inter-
 
 ## Why This Design?
 This lab replicates the NHS CoIN (Community of Interest Network) architecture which uses:
-- Dual-site design (Heatherwood Hospital + Greenwood Datacentre)
-- Checkpoint firewall clusters for HA
+- Dual-site design 
+- Firewall clusters for HA
 - Cisco C9300/C9600 switching hierarchy
 - Separated DMZ for server hosting
-- HSCN (Health and Social Care Network) connectivity
+- 
 
 ## Author
-Built as part of CCNA studies and enterprise networking practice.
+Built as part of enterprise networking practice.
 EVE-NG lab environment with pfSense, Cisco IOU images.
