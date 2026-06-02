@@ -4,7 +4,6 @@
 This lab replicates a real-world enterprise network infrastructure built in EVE-NG.
 It demonstrates enterprise-grade network design including firewall zones, inter-VLAN routing, NAT, and DMZ architecture.
 
-Inspired by enterprise healthcare network designs used in large organisations.
 
 ## Network Diagram
 ```
